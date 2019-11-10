@@ -1,7 +1,7 @@
 {
-  "name": "node-web-ts",
+  "name": "koa-proxy-ts",
   "version": "1.0.0",
-  "description": "node web based on koa",
+  "description": "node web based on koa with proxy",
   "main": "src/main.js",
   "scripts": {
     "dev": "ts-node-dev src/main.ts",
@@ -10,11 +10,9 @@
   "keywords": [
     "node",
     "koa",
-    "framework",
+    "proxy",
     "ts",
-    "typescript",
-    "hot",
-    "compilation"
+    "typescript"
   ],
   "author": "zhang.tigerkin",
   "license": "MIT",
