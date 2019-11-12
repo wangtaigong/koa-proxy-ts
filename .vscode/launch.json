@@ -7,11 +7,18 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
-            "skipFiles": [
-                "<node_internals>/**"
+            "name": "Launch server debug",
+            "program": "${workspaceRoot}/node_modules/ts-node-dev/bin/ts-node-dev",
+            "args": [
+              "--inspect",
+              "--no-notify",
+              "--respawn",
+              "--transpileOnly",
+              "./src/app.ts"
             ],
-            "program": "${workspaceFolder}\\src\\main.ts"
-        }
+            "protocol": "inspector",
+            "internalConsoleOptions": "openOnSessionStart",
+            "port": 9229
+          }
     ]
 }
